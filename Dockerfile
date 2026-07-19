@@ -11,7 +11,7 @@ FROM debian:12-slim
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       wireguard-tools iptables iproute2 \
+       wireguard-tools iptables iproute2 procps \
     && rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /usr/local/bin/entrypoint
