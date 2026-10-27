@@ -35,4 +35,4 @@ jobs:
           tags: ${{ env.IMAGE }}:latest
           labels: |
             org.opencontainers.image.source=https://github.com/GameCTL-HQ/WireGuard-Kube
-            org.opencontainers.image.description=From-scratch WireGuard tools image for GameCTL/ProxyCTL tunnel pods (Debian official base, host-kernel data plane)
+            org.opencontainers.image.description=From-scratch WireGuard tools image for GameCTL/ProxyCTL tunnel pods (wireguard-tools built from upstream source, Debian base, host-kernel data plane)
